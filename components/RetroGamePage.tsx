@@ -148,10 +148,11 @@ const quests = [
 ];
 
 const tips = [
+  { icon: "🎤", text: "Try dictation!" },
   { icon: "👾", text: "Use v0 for prototyping UI" },
   {
     icon: "☢️",
-    text: "Use a fronte end framework with huge community like Next JS",
+    text: "Use a frontend framework with huge community like Next JS",
   },
   { icon: "🎮", text: "Use cursor settings for global guardrails" },
   { icon: "🛠️", text: "Use cursorrules for project settings" },
