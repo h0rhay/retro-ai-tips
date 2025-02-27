@@ -16,15 +16,15 @@ export default function RetroGamePage() {
             <div className="absolute bottom-0 right-0 w-4 h-4 bg-[#25f79c]"></div>
 
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-4 text-[#25f79c] retro-text font-pixel">
-              RETRO QUEST
+              AI TIPS
             </h1>
             <p className="text-xl sm:text-2xl text-center mb-8 text-[#39ff14]">
-              Press START to begin your adventure!
+              What will you discover?
             </p>
 
             <div className="flex justify-center">
               <button className="retro-button px-8 py-3 bg-[#25f79c] text-black font-bold text-xl border-4 border-white hover:bg-[#5df8b6] transition-colors font-pixel">
-                START GAME
+                LEARN MORE
               </button>
             </div>
           </div>
@@ -35,7 +35,7 @@ export default function RetroGamePage() {
       <section className="px-4 py-16 bg-[#091c69]">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-12 text-center text-[#39ff14] retro-text font-pixel">
-            SELECT YOUR QUEST
+            SELECT YOUR TIP:
           </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
