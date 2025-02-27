@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "PixelFont";
+  src: url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+  font-display: swap;
+}
+
+:root {
+  --background: #000000;
+  --foreground: #ffffff;
+  --primary: #25f79c; /* Updated color */
+  --secondary: #39ff14;
+  --accent: #5acffa;
+}
+
+.font-pixel {
+  font-family: "Press Start 2P", system-ui, sans-serif;
+  letter-spacing: 1px;
+}
+
+.retro-text {
+  text-shadow: 3px 3px 0 #000;
+}
+
+@layer base {
+  body {
+    @apply bg-black text-white font-pixel;
+  }
+}
+
+@layer components {
+  .retro-button {
+    position: relative;
+    transition: all 0.1s;
+  }
+
+  .retro-button:active {
+    transform: translateY(4px);
+  }
+
+  .retro-card {
+    display: block;
+    transition: all 0.2s;
+  }
+}
+
+/* Pixel animation for buttons */
+@keyframes pixel-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 247, 156, 0.7); /* Updated color */
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(37, 247, 156, 0); /* Updated color */
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 247, 156, 0); /* Updated color */
+  }
+}
+
+.retro-button:hover {
+  animation: pixel-pulse 1.5s infinite;
+}
+
